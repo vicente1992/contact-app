@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+p,
+h2 {
+  margin: 0;
+}
+html,
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+}
+/* Helpers */
+.container {
+  padding: 70px 1rem;
+  margin: 1rem;
+}

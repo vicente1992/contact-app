@@ -1,0 +1,17 @@
+<mat-card class="card">
+  <mat-card-content>
+    <h2 class="title">{{ contacts.length }}</h2>
+    <p class="sub__title">Total de Contactos</p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="card">
+  <mat-card-content>
+    <h2 class="title">{{ birthdayContact.length }}</h2>
+    <p class="sub__title">Happy Birthday today</p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="card__contact">
+  <mat-card-content (click)="viewContactList()">
+    <p><span class="material-icons">groups</span>Mis contactos</p>
+  </mat-card-content>
+</mat-card>

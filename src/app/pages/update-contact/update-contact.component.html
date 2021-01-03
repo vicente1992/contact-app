@@ -1,0 +1,65 @@
+<mat-card class="card">
+  <mat-card-title class="title">Actualizar Contacto</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="contactForm" (submit)="updateContact()">
+      <p>
+        <mat-form-field>
+          <input
+            type="text"
+            matInput
+            placeholder="Número de identificación"
+            formControlName="identificationNumber"
+          />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input
+            type="text"
+            matInput
+            placeholder="Nombre completo"
+            formControlName="names"
+          />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input
+            type="text"
+            matInput
+            placeholder="Celular"
+            formControlName="phone"
+          />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input
+            type="text"
+            matInput
+            placeholder="Dirección"
+            formControlName="address"
+          />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <mat-label>Fecha de compleaños</mat-label>
+          <input
+            matInput
+            [matDatepicker]="dp"
+            formControlName="birthdayDate"
+            readonly
+          />
+          <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+          <mat-datepicker #dp></mat-datepicker>
+        </mat-form-field>
+      </p>
+
+      <div class="buttons">
+        <button type="submit" mat-raised-button color="primary">Guardar</button>
+        <button mat-raised-button (click)="viewContact()">Cancelar</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,36 @@
+.card {
+  max-width: 280px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.card__contact {
+  max-width: 280px;
+  height: 40px;
+  margin: auto;
+  cursor: pointer;
+}
+.card__contact p {
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+}
+
+.material-icons {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.title {
+  padding: 40px 0;
+  font-size: 95px;
+  font-weight: 500;
+  text-align: center;
+}
+.sub__title {
+  font-size: 18px;
+  text-align: center;
+  padding: 18px 0;
+}
+.material-icons {
+  justify-content: center;
+}

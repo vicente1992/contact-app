@@ -1,0 +1,32 @@
+<div class="button__create">
+  <button
+    type="submit"
+    mat-raised-button
+    color="primary"
+    (click)="viewCreateContact()"
+  >
+    Nuevo Contacto
+  </button>
+</div>
+
+<mat-card class="card" *ngFor="let contact of contacts">
+  <mat-card-content class="flex">
+    <div class="info">
+      <h2 class="name">{{ contact.names }}</h2>
+      <p>{{ contact.phone }}</p>
+      <p>{{ contact.birthdayDate | formatDate }}</p>
+    </div>
+    <div class="action">
+      <a
+        ><span class="material-icons" (click)="deleteContact(contact.id)">
+          delete
+        </span></a
+      >
+      <a
+        ><span class="material-icons" (click)="updateContact(contact.id)">
+          edit
+        </span></a
+      >
+    </div>
+  </mat-card-content>
+</mat-card>
